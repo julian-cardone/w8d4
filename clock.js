@@ -5,12 +5,11 @@ class Clock{
         this.minutes = time.getMinutes();
         this.seconds = time.getSeconds();
         this.printTime();
-        //setInterval(this._tick.bind(this), 1000);
+        setInterval(this._tick.bind(this), 1000);
 
-        setInterval(() => {
-            debugger
-            this._tick.bind(this)
-        }, 1000);
+        // setInterval(() => {
+        //     this._tick.bind(this)()
+        // }, 1000);
     }
 
     printTime(){
